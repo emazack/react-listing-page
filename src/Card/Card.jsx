@@ -2,44 +2,51 @@ import React from 'react';
 import { StyledCard } from "../Style/Card.style";
 import { InternalWrapper } from "../Style/InternalWrapper.style";
 
-function Card() {
+function Card({images,available,type,title,tenants,baths,beds,description,currency,price}) {
     return(
         <StyledCard>
             <div className='top-card'>
-                <div className='image-container'>
-                    <img src="" alt="" />
+                <div className='images-container'>
+                    {images.map(image => (
+                        <img src={image.url} alt="apartment photo" />
+                    ))}
                 </div>
-                <div className='tag'>
-                    Disponibile da subito
-                </div>
+                {available ? (
+                    <div className='tag'>
+                        Disponibile da subito
+                    </div>
+                ) : null}
             </div>
             <div className='main-card'>
                 <InternalWrapper>
                     <div className='rental-space'>
-                        Private Room
+                         {type}
                     </div>
                     <div className='title'>
-                        Ampia singola
+                        {title}
                     </div>
                     <div className='general-infos'>
                         <div className='info-box'>
-                            <span className='number'>2</span>
-                            <span className='label'>inquilini</span>
+                            <span className='number'>{tenants}</span>
+                            <span className='label'>
+                                {tenants > 1 ? "inquilini" : "inquilino"}
+                            </span>
                         </div>
                         <div className='info-box'>
-                            <span className='number'>2</span>
-                            <span className='label'>inquilini</span>
+                            <span className='number'>{baths}</span>
+                            <span className='label'>
+                                {baths > 1 ? "bagni" : "bagno"}
+                            </span>
                         </div>
                         <div className='info-box'>
-                            <span className='number'>2</span>
-                            <span className='label'>inquilini</span>
+                            <span className='number'>{beds}</span>
+                            <span className='label'>
+                                {beds > 1 ? "letti" : "letto"}
+                            </span>
                         </div>
                     </div>
                     <div className='description'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Iusto voluptatem sapiente quae veniam magnam aliquam facilis 
-                        pariatur minus velit, cumque quisquam qui animi sed eos optio,
-                        maiores dicta fugit iste.
+                        {description}
                     </div>
                 </InternalWrapper>
             </div>
@@ -48,6 +55,13 @@ function Card() {
                     <div className='price-container'>
                         <div className='label'>
                             Canone
+                        </div>
+                        <div className='rent'>
+                            <span className='currency'>
+                                {currency === "EUR" ? "€" : null }
+                            </span>
+                            <span className='price'>{price}</span>
+                            <span className='recurrence'> /mese</span>
                         </div>
                     </div>
                 </InternalWrapper>
