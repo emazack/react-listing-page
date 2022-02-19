@@ -1,0 +1,290 @@
+[
+    {
+      "id": 1,
+      "type": "Private Room",
+      "street": "Via Giuseppe Mazzini",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "20",
+      "country": "Italy",
+      "cap": "20123",
+      "floor": 1,
+      "tenants": 2,
+      "baths": 2,
+      "beds": 2,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=1"
+        }
+      ],
+      "price": 610,
+      "currency": "EUR",
+      "title": "Camera luminosissima in Via Mazzini",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "available": true
+    },
+    {
+      "id": 2,
+      "type": "Entire Property",
+      "street": "Via Olona",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "15",
+      "country": "Italy",
+      "cap": "20123",
+      "floor": 9,
+      "tenants": 5,
+      "baths": 1,
+      "beds": 5,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=2"
+        }
+      ],
+      "price": 1200,
+      "currency": "EUR",
+      "title": "Stupendo attico in Via Olona",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.",
+      "available": false
+    },
+    {
+      "id": 3,
+      "type": "Shared Room",
+      "street": "Via Carlo Armellini",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "10",
+      "country": "Italy",
+      "cap": "20161",
+      "floor": 5,
+      "tenants": 2,
+      "baths": 2,
+      "beds": 2,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=3"
+        }
+      ],
+      "price": 450,
+      "currency": "EUR",
+      "title": "Stanza condivisa in palazzo storico",
+      "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica.",
+      "available": true
+    },
+    {
+      "id": 4,
+      "type": "Studio",
+      "street": "Via Asturie",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "1",
+      "country": "Italy",
+      "cap": "20162",
+      "floor": 2,
+      "tenants": 1,
+      "baths": 1,
+      "beds": 1,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=4"
+        }
+      ],
+      "price": 750,
+      "currency": "EUR",
+      "title": "Monolocale ricco di personalità in Via Asturie",
+      "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large.",
+      "available": true
+    },
+    {
+      "id": 5,
+      "type": "Private Room",
+      "street": "Via Simone D'Orsenigo",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "13",
+      "country": "Italy",
+      "cap": "20135",
+      "floor": 7,
+      "tenants": 2,
+      "baths": 2,
+      "beds": 1,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=5"
+        }
+      ],
+      "price": 650,
+      "currency": "EUR",
+      "title": "Singola luminosa e recentemente arredata, tutti i servizi a due passi",
+      "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was.",
+      "available": false
+    },
+    {
+      "id": 6,
+      "type": "Private Room",
+      "street": "Via Condino",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "11",
+      "country": "Italy",
+      "cap": "20139",
+      "floor": 4,
+      "tenants": 2,
+      "baths": 1,
+      "beds": 2,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=6"
+        }
+      ],
+      "price": 480,
+      "currency": "EUR",
+      "title": "Stupenda singola in Via Condino a due passi da tutto",
+      "description": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see.",
+      "available": true
+    },
+    {
+      "id": 7,
+      "type": "Entire Property",
+      "street": "Via Quarnero",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "2",
+      "country": "Italy",
+      "cap": "20146",
+      "floor": 2,
+      "tenants": 4,
+      "baths": 2,
+      "beds": 4,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=7"
+        }
+      ],
+      "price": 1480,
+      "currency": "EUR",
+      "title": "Appartamento in palazzo storico, Via Quarnero",
+      "description": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!",
+      "available": true
+    },
+    {
+      "id": 8,
+      "type": "Shared Room",
+      "street": "Via Fra Gerolamo Savonarola",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "1",
+      "country": "Italy",
+      "cap": "20149",
+      "floor": 6,
+      "tenants": 2,
+      "baths": 2,
+      "beds": 2,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=8"
+        }
+      ],
+      "price": 510,
+      "currency": "EUR",
+      "title": "Magnifica e luminosissima stanza condivisa in Via Savonarola",
+      "description": "The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+      "available": true
+    },
+    {
+      "id": 9,
+      "type": "Private Room",
+      "street": "Via Aristotile Fioravanti",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "30",
+      "country": "Italy",
+      "cap": "20154",
+      "floor": 4,
+      "tenants": 1,
+      "baths": 2,
+      "beds": 1,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=9"
+        }
+      ],
+      "price": 560,
+      "currency": "EUR",
+      "title": "Singola in Via Aristotile Fioravanti",
+      "description": "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.",
+      "available": true
+    },
+    {
+      "id": 10,
+      "type": "Studio",
+      "street": "Via Principe Eugenio",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "15",
+      "country": "Italy",
+      "cap": "20155",
+      "floor": 3,
+      "tenants": 1,
+      "baths": 1,
+      "beds": 1,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=10"
+        }
+      ],
+      "price": 610,
+      "currency": "EUR",
+      "title": "Stupendo monolocale completamente arredato in Via Principe Eugenio",
+      "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+      "available": true
+    },
+    {
+      "id": 11,
+      "type": "Shared Room",
+      "street": "Viale Giovanni Suzzani",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "13",
+      "country": "Italy",
+      "cap": "20162",
+      "floor": 4,
+      "tenants": 2,
+      "baths": 2,
+      "beds": 2,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=11"
+        }
+      ],
+      "price": 550,
+      "currency": "EUR",
+      "title": "Stanza condivisa in appartamento rimodernato di recente",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "available": false
+    },
+    {
+      "id": 12,
+      "type": "Entire Property",
+      "street": "Via Archimede",
+      "city": "Milano",
+      "province": "MI",
+      "street_number": "42",
+      "country": "Italy",
+      "cap": "20129",
+      "floor": 8,
+      "tenants": 3,
+      "baths": 2,
+      "beds": 3,
+      "images": [
+        {
+          "url": "https://placeimg.com/1280/960/arch?random=12"
+        }
+      ],
+      "price": 1250,
+      "currency": "EUR",
+      "title": "Attico in Via Archimede, magnifica vista",
+      "description": "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "available": true
+    }
+  ]
