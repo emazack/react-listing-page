@@ -4,7 +4,9 @@ import logo from '../zappyrent-logo.png'
 
 function Logo() {
     return(
-        <img className='logo-header' src={logo} alt="Zappyrent logo" />
+        <div className='logo-container'>
+            <img className='main-logo' src={logo} alt="Zappyrent logo" />
+        </div>
     );
 }
 

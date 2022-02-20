@@ -54,14 +54,14 @@ function Card({images,available,type,title,tenants,baths,beds,description,curren
                 <InternalWrapper>
                     <div className='price-container'>
                         <div className='label'>
-                            Canone
+                            Canone d'affitto
                         </div>
                         <div className='rent'>
                             <span className='currency'>
                                 {currency === "EUR" ? "€" : null }
                             </span>
                             <span className='price'>{price}</span>
-                            <span className='recurrence'> /mese</span>
+                            <span className='recurrence'>/mese</span>
                         </div>
                     </div>
                 </InternalWrapper>

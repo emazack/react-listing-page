@@ -3,6 +3,9 @@ import { FiltersContainer } from "../Style/FiltersContainer.style";
 import { TypeFilter } from "../Style/TypeFilter.style";
 import { Checkbox } from "../Style/Checkbox.style";
 
+import arrowUp from '../up-arrow.png'
+import arrowDown from '../down-arrow.png'
+
 function FiltersBar({filterType,setFilterType}) {
 
     const filtersList = [
@@ -32,12 +35,15 @@ function FiltersBar({filterType,setFilterType}) {
             <TypeFilter>
                 <div className="select" onClick={openDropdown}>
                     <span className="text">Tipologia</span>
-                    <span className="arrow-open">
-                        ^
-                    </span>
-                    <span className="arrow-closed">
-                        v
-                    </span>
+                    {isOpen ? (
+                        <div className="arrow">
+                            <img src={arrowUp} alt="" />
+                        </div>
+                    ) : (
+                        <div className="arrow">
+                            <img src={arrowDown} alt="" />
+                        </div>
+                    )}
                 </div>
                 {isOpen && (
                     <div className="dropdown">
@@ -52,8 +58,8 @@ function FiltersBar({filterType,setFilterType}) {
                     </div>
                 )}
             </TypeFilter>
-            <Checkbox name="availability">
-                <input type="checkbox" name="availability" id="availability" />
+            <Checkbox htmlFor="availability">
+                <input type="checkbox" value="availability" id="availability" />
                 <span className="label">Disponibile subito</span>
             </Checkbox>
         </FiltersContainer>
