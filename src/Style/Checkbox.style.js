@@ -8,10 +8,15 @@ justify-content: flex-start;
 align-items: center;
 cursor: pointer;
 
+    .label{
+        width: max-content;
+    }
+
     & #availability{
         order: 2;
         margin-right: unset;
         margin-left: 10px;
+
     }
 
     & input[type="checkbox"]{

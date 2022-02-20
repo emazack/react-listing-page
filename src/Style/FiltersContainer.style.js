@@ -5,6 +5,12 @@ export const FiltersContainer = styled.div`
     display: flex;
     padding: 0px 20px;
 
+    @media (max-width: 768px) {
+        justify-content: center;
+        align-items: center;    
+        padding: 0;
+    }
+
 
     & .select{
         border: 1px solid #C8C8C8;
@@ -14,7 +20,6 @@ export const FiltersContainer = styled.div`
         align-items: center;
         padding: 8px 15px;
         border-radius: 30px;
-        margin-right: 35px;
         cursor: pointer;
 
         .arrow{
