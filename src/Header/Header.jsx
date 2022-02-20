@@ -6,12 +6,14 @@ import { Wrapper } from "../Style/Wrapper.style";
 import './Header.css';
 import '../index.css';
 
-function Header() {
+function Header({filterType,setFilterType}) {
     return(
-        <Wrapper>
-            <Logo/>
-            <FiltersBar/>
-        </Wrapper>
+        <header className='header'>
+            <Wrapper>
+                <Logo/>
+                <FiltersBar filterType={filterType} setFilterType={setFilterType}/>
+            </Wrapper>
+        </header>
     );
 }
 

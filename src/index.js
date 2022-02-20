@@ -1,19 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ListingCards from './ListingCards/ListingCards';
-import Header from './Header/Header';
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <App />
   </React.StrictMode>,
-  document.getElementById('header')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <ListingCards />
-  </React.StrictMode>,
-  document.getElementById('main-page')
+  document.getElementById('single-page-app')
 );

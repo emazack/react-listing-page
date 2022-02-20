@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiltersContainer } from "../Style/FiltersContainer.style";
 import { TypeFilter } from "../Style/TypeFilter.style";
 import { Checkbox } from "../Style/Checkbox.style";
 
-function FiltersBar() {
+function FiltersBar({filterType,setFilterType}) {
+
+    const filtersList = [
+        {id: "private", label: "Private Room"},
+        {id: "entire", label: "Entire Property"},
+        {id: "shared", label: "Shared Room"},
+        {id: "studio", label: "Studio"},        
+    ]
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    function openDropdown() {
+        setIsOpen(!isOpen);
+    }
+
+    function typeHandler(event) {
+        const checked = event.target.checked
+        if (checked) {
+            setFilterType(filterType.concat(event.target.value));
+        } else {
+            setFilterType(filterType.filter(el => !(el === event.target.value)));
+        }
+    }
 
     return(
         <FiltersContainer>
             <TypeFilter>
-                <div className="select">
+                <div className="select" onClick={openDropdown}>
                     <span className="text">Tipologia</span>
                     <span className="arrow-open">
                         ^
@@ -17,24 +39,18 @@ function FiltersBar() {
                         v
                     </span>
                 </div>
-                <div className="dropdown">
-                    <Checkbox name="private">
-                        <input type="checkbox" name="private" id="private" />
-                        <span className="label">Private room</span>
-                    </Checkbox>
-                    <Checkbox name="entire">
-                        <input type="checkbox" name="entire" id="entire" />
-                        <span className="label">Entire property</span>
-                    </Checkbox>
-                    <Checkbox name="shared">
-                        <input type="checkbox" name="shared" id="shared" />
-                        <span className="label">Shared room</span>
-                    </Checkbox>
-                    <Checkbox name="studio">
-                        <input type="checkbox" name="studio" id="studio" />
-                        <span className="label">Studio</span>
-                    </Checkbox>
-                </div>
+                {isOpen && (
+                    <div className="dropdown">
+                        {filtersList.map(filter => (
+                            <Checkbox key={filter.id} htmlFor={filter.id}>
+                                <input onChange={(checkingEvent) => {
+                                    typeHandler(checkingEvent);
+                                }} type="checkbox" value={filter.label} id={filter.id} />
+                                <span className="label">{filter.label}</span>
+                            </Checkbox>
+                        ))}
+                    </div>
+                )}
             </TypeFilter>
             <Checkbox name="availability">
                 <input type="checkbox" name="availability" id="availability" />

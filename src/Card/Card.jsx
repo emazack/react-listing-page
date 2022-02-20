@@ -7,8 +7,8 @@ function Card({images,available,type,title,tenants,baths,beds,description,curren
         <StyledCard>
             <div className='top-card'>
                 <div className='images-container'>
-                    {images.map(image => (
-                        <img src={image.url} alt="apartment photo" />
+                    {images.map((image, index) => (
+                        <img key={index} src={image.url} alt="apartment" />
                     ))}
                 </div>
                 {available ? (
