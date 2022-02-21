@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-
-import { CardsContainer } from "../Style/CardsContainer.style";
+import { CardsContainer } from "./CardsContainer.style";
 import { Wrapper } from "../Style/Wrapper.style";
 import Card from "../Card/Card";
 
-function ListingCards({filterType}) {
+import '../Style/global-style.css';
+
+function ListingCards({filterType,filteredCards,setFilteredCards}) {
     
     const [cards, setCards] = useState([]);
-    const [filteredCards, setFilteredCards] = useState([]);
     
     useEffect( () => {
         getCards();
@@ -17,14 +17,14 @@ function ListingCards({filterType}) {
         filterHandler();
     }, [filterType]);
     
-    const getCards = async () => {
+    async function getCards() {
         const response = await fetch('https://my-json-server.typicode.com/zappyrent/frontend-assessment/properties');
         const data = await response.json();
-        setCards(data);
-        setFilteredCards(data);
+        setCards(await data);
+        setFilteredCards(await data);
     }
     
-    const filterHandler = () => {
+    function filterHandler() {
         setFilteredCards(cards.filter(card => (filterType.indexOf(card.type) > -1) ));
     }
     
@@ -53,4 +53,4 @@ function ListingCards({filterType}) {
             );
         }
         
-        export default ListingCards;
+    export default ListingCards;

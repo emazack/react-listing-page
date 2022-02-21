@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { FiltersContainer } from "../Style/FiltersContainer.style";
-import { TypeFilter } from "../Style/TypeFilter.style";
-import { Checkbox } from "../Style/Checkbox.style";
+import { FiltersContainer } from "./FiltersContainer.style";
+import { TypeFilter } from "./TypeFilter.style";
+import { Checkbox } from "./Checkbox.style";
 
-import arrowUp from '../up-arrow.png'
-import arrowDown from '../down-arrow.png'
+import arrowUp from '../assets/up-arrow.png'
+import arrowDown from '../assets/down-arrow.png'
+
+import '../Style/global-style.css';
+
 
 function FiltersBar({filterType,setFilterType}) {
 
@@ -37,26 +40,31 @@ function FiltersBar({filterType,setFilterType}) {
                     <span className="text">Tipologia</span>
                     {isOpen ? (
                         <div className="arrow">
-                            <img src={arrowUp} alt="" />
+                            <img src={arrowUp} alt="freccia su" />
                         </div>
                     ) : (
                         <div className="arrow">
-                            <img src={arrowDown} alt="" />
+                            <img src={arrowDown} alt="freccia giu" />
                         </div>
                     )}
                 </div>
-                {isOpen && (
-                    <div className="dropdown">
-                        {filtersList.map(filter => (
-                            <Checkbox key={filter.id} htmlFor={filter.id}>
-                                <input onChange={(checkingEvent) => {
-                                    typeHandler(checkingEvent);
-                                }} type="checkbox" value={filter.label} id={filter.id} />
-                                <span className="label">{filter.label}</span>
-                            </Checkbox>
-                        ))}
-                    </div>
-                )}
+                <div className={isOpen ? "dropdown visible" : "dropdown hidden"}>
+                    {filtersList.map(filter => (
+                        <Checkbox 
+                            key={filter.id} 
+                            htmlFor={filter.id}>
+                                <input 
+                                    onChange={(checkingEvent) => {
+                                        typeHandler(checkingEvent);
+                                    }} 
+                                    type="checkbox" 
+                                    value={filter.label} 
+                                    id={filter.id} 
+                                />
+                            <span className="label">{filter.label}</span>
+                        </Checkbox>
+                    ))}
+                </div>
             </TypeFilter>
             <Checkbox htmlFor="availability">
                 <input type="checkbox" value="availability" id="availability" />

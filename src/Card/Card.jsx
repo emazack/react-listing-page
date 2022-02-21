@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyledCard } from "../Style/Card.style";
-import { InternalWrapper } from "../Style/InternalWrapper.style";
+import { StyledCard } from "./Card.style";
+import { InternalWrapper } from "./InternalWrapper.style";
+
+import '../Style/global-style.css';
 
 function Card({images,available,type,title,tenants,baths,beds,description,currency,price}) {
     return(
@@ -22,9 +24,9 @@ function Card({images,available,type,title,tenants,baths,beds,description,curren
                     <div className='rental-space'>
                          {type}
                     </div>
-                    <div className='title'>
+                    <h2 className='title'>
                         {title}
-                    </div>
+                    </h2>
                     <div className='general-infos'>
                         <div className='info-box'>
                             <span className='number'>{tenants}</span>
@@ -58,7 +60,7 @@ function Card({images,available,type,title,tenants,baths,beds,description,curren
                         </div>
                         <div className='rent'>
                             <span className='currency'>
-                                {currency === "EUR" ? "€" : null }
+                                {currency === "EUR" ? "€" : "Cristalli Chirali" }
                             </span>
                             <span className='price'>{price}</span>
                             <span className='recurrence'>/mese</span>

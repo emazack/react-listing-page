@@ -1,12 +1,15 @@
 import React from 'react';
-import './Logo.css';
-import logo from '../zappyrent-logo.png'
+import { StyledLogo } from './StyledLogo.style'
+
+import logo from '../assets/zappyrent-logo.png'
+import '../Style/global-style.css';
+
 
 function Logo() {
     return(
-        <div className='logo-container'>
+        <StyledLogo>
             <img className='main-logo' src={logo} alt="Zappyrent logo" />
-        </div>
+        </StyledLogo>
     );
 }
 

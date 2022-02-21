@@ -12,7 +12,7 @@ export const FiltersContainer = styled.div`
     }
 
 
-    & .select{
+    & .select {
         border: 1px solid #C8C8C8;
         width: 180px;
         display: flex;
@@ -29,10 +29,10 @@ export const FiltersContainer = styled.div`
         }
     }
 
-    & .dropdown{
+    & .dropdown.visible {
+        display: grid;
         border: 1px solid #C8C8C8;
         width: 190px;
-        display: grid;
         row-gap: 15px;
         padding: 10px;
         border-radius: 10px;
@@ -41,5 +41,9 @@ export const FiltersContainer = styled.div`
         left: 0;
         background-color: #FFFFFF;
         z-index: 2;
+    }
+
+    & .dropdown.hidden{
+        display: none;
     }
 `;
